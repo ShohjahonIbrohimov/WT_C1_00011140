@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/contact.css" />
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./Web fonts/all.min.css" />
     <title>Street88</title>
@@ -36,33 +37,57 @@
                 <li class="bottom__link">
                   <a href="./about.html">О нас</a>
                 </li>
-                <li class="bottom__link">
-                  <a href="/contact.html">Контакты</a>
-                </li>
+                <li class="bottom__link"><a href="#!">Контакты</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+    </header>
 
-      <div class="header__bottom">
-        <div class="container">
-          <h1 class="header__subtitle">Большой гамбургер</h1>
-          <h2 class="header__title">говядина</h2>
-          <p class="header__text">
-            Свежая хрустящая булочка, листики салата, маринованный огурец с
-            луком и небольшая котлета, сдобренная майонезом и кетчупом, - таков
-            классический портрет гамбургера, наиболее распространенной «быстрой»
-            еды в США, от отравления которой ежедневно на больничных койках
-            оказываются десятки тысяч американцев
-          </p>
-          <div class="header__link">
-            <a class="link__link" href="#!">14500</a>
-            <a class="link__link2" href="#!">Просмотреть</a>
-          </div>
+    <div class="container">
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="./Images/street-77-sergeli-3209.jpg" style="width: 100%" />
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
-    </header>
+    </div>
 
     <footer class="footer">
       <div class="container">
