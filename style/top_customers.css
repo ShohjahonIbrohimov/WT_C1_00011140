@@ -1,0 +1,27 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.top_users_wrap {
+  margin: 3rem auto;
+}
+
+td,
+th {
+  border: 1px solid #69cf17bf;
+  text-align: left;
+  padding: 8px;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #69cf17bf;
+  color: white;
+}
+
+.top__users {
+  color: white;
+  margin-bottom: 1rem;
+}

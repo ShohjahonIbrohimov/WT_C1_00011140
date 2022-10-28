@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/vacancy.css" />
     <link rel="stylesheet" href="./Web fonts/all.min.css" />
     <title>Street88</title>
   </head>
@@ -33,14 +34,12 @@
                 Menu
               </button>
               <ul class="bottom" id="header__links">
-                <li class="bottom__link active"><a href="/">Главная</a></li>
-                <li class="bottom__link">
-                  <a href="/menu.html">Меню</a>
-                </li>
+                <li class="bottom__link"><a href="/">Главная</a></li>
+                <li class="bottom__link"><a href="/menu.html">Меню</a></li>
                 <li class="bottom__link">
                   <a href="/top_customers.html">Top customers</a>
                 </li>
-                <li class="bottom__link">
+                <li class="bottom__link active">
                   <a href="/vacancies.html">Vacancies</a>
                 </li>
                 <li class="bottom__link">
@@ -54,25 +53,11 @@
           </div>
         </div>
       </div>
-
-      <div class="header__bottom">
-        <div class="container">
-          <h1 class="header__subtitle">Большой гамбургер</h1>
-          <h2 class="header__title">говядина</h2>
-          <p class="header__text">
-            Свежая хрустящая булочка, листики салата, маринованный огурец с
-            луком и небольшая котлета, сдобренная майонезом и кетчупом, - таков
-            классический портрет гамбургера, наиболее распространенной «быстрой»
-            еды в США, от отравления которой ежедневно на больничных койках
-            оказываются десятки тысяч американцев
-          </p>
-          <div class="header__link">
-            <a class="link__link" href="#!">14500</a>
-            <a class="link__link2" href="#!">Просмотреть</a>
-          </div>
-        </div>
-      </div>
     </header>
+
+    <section class="container">
+      <div id="vacancies__wrap"></div>
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -92,7 +77,8 @@
         Сайт разработан в целях обучения в PROWEB
       </div>
     </footer>
-
     <script src="./js/main.js"></script>
+
+    <script src="./js/vacancies.js"></script>
   </body>
 </html>

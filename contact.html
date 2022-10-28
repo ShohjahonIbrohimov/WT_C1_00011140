@@ -30,14 +30,24 @@
           <div class="container">
             <div class="bottom">
               <a href="#!" class="street88">STREET 88</a>
-              <ul class="bottom">
-                <li class="bottom__link active"><a href="#!">Главная</a></li>
-                <li class="bottom__link"><a href="#!">Корзина</a></li>
+              <button class="mobile__menu__btn" onclick="toggleMenu()">
+                Menu
+              </button>
+              <ul class="bottom" id="header__links">
+                <li class="bottom__link"><a href="/">Главная</a></li>
                 <li class="bottom__link"><a href="/menu.html">Меню</a></li>
+                <li class="bottom__link">
+                  <a href="/top_customers.html">Top customers</a>
+                </li>
+                <li class="bottom__link">
+                  <a href="/vacancies.html">Vacancies</a>
+                </li>
                 <li class="bottom__link">
                   <a href="./about.html">О нас</a>
                 </li>
-                <li class="bottom__link"><a href="#!">Контакты</a></li>
+                <li class="bottom__link active">
+                  <a href="/contact.html">Контакты</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -46,44 +56,41 @@
     </header>
 
     <div class="container">
-      <div style="text-align: center">
+      <div class="contact__desc">
         <h2>Contact Us</h2>
-        <p>Swing by for a cup of coffee, or leave us a message:</p>
+        <p>Leave a message to us:</p>
       </div>
       <div class="row">
-        <div class="column">
+        <div class="str__column">
           <img src="./Images/street-77-sergeli-3209.jpg" style="width: 100%" />
         </div>
-        <div class="column">
-          <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-            <label for="subject">Subject</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-              style="height: 170px"
-            ></textarea>
-            <input type="submit" value="Submit" />
+        <div class="str__column">
+          <form onsubmit="return validate()">
+            <div>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+              <span id="err__fname"></span>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+              <span id="err__lname"></span>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 170px"
+              ></textarea>
+              <span id="err__subject"></span>
+            </div>
+
+            <input class="str__button" type="submit" value="Submit" />
           </form>
         </div>
       </div>
@@ -108,4 +115,7 @@
       </div>
     </footer>
   </body>
+  <script src="./js/main.js"></script>
+
+  <script src="./js/contact.js"></script>
 </html>

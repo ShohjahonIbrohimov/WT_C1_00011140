@@ -1,0 +1,45 @@
+#vacancies__wrap {
+  display: flex;
+  margin: 4rem auto;
+  flex-wrap: wrap;
+}
+
+.vacancy__card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vacancy__card {
+  max-width: 300px;
+}
+
+.vacancy__card h1 {
+  color: #6acf17;
+  margin-bottom: 1rem;
+}
+
+.vacancy__card ul {
+  padding-left: 1rem;
+  /* list-style-type: none; */
+}
+
+.vacancy__card li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: grey;
+}
+
+.vacancy__card .actions {
+  margin-top: 1rem;
+}
+
+.vacancy__card button {
+  background: #6acf17;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
