@@ -523,6 +523,7 @@ body {
     position: absolute;
     top: 110%;
     flex-direction: column;
+    display: none;
   }
 
   .bottom__link a {
