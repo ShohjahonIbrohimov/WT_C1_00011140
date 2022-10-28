@@ -1,0 +1,60 @@
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  /* margin-bottom: 16px; */
+  resize: vertical;
+  background: transparent;
+  color: white;
+}
+
+#err__fname,
+#err__lname,
+#err__subject {
+  color: red;
+  margin-bottom: 16px;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.contact__desc h2,
+p {
+  text-align: center;
+  color: white;
+}
+
+input[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.str__column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .str__column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

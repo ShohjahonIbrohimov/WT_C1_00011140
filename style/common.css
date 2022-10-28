@@ -1,0 +1,11 @@
+.bottom {
+  list-style-type: none;
+}
+.bottom__link.active a {
+  height: 100%;
+  background: rgba(105, 207, 23, 0.75);
+}
+
+.str__button {
+  background: #69cf17bf;
+}
